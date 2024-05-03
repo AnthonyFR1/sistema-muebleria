@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B62075B6-A446-4B3F-97BA-8655E87D84B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ProviderModel, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProviderModel.1.0.4\lib\net40\ProviderModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\FormConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FormConsultaCliente.Designer.cs">
+      <DependentUpon>FormConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FormConsultaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FormConsultaProducto.Designer.cs">
+      <DependentUpon>FormConsultaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionarProductos.Designer.cs">
+      <DependentUpon>FormGestionarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionarCliente.Designer.cs">
+      <DependentUpon>FormGestionarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionarLogueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionarLogueo.Designer.cs">
+      <DependentUpon>FormGestionarLogueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionarTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionarTrabajador.Designer.cs">
+      <DependentUpon>FormGestionarTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuPrincipal.Designer.cs">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRealizarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRealizarVenta.Designer.cs">
+      <DependentUpon>FormRealizarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consultas\FormConsultaCliente.resx">
+      <DependentUpon>FormConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FormConsultaProducto.resx">
+      <DependentUpon>FormConsultaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionarProductos.resx">
+      <DependentUpon>FormGestionarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionarCliente.resx">
+      <DependentUpon>FormGestionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionarLogueo.resx">
+      <DependentUpon>FormGestionarLogueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionarTrabajador.resx">
+      <DependentUpon>FormGestionarTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuPrincipal.resx">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRealizarVenta.resx">
+      <DependentUpon>FormRealizarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aplicacion\Aplicacion.csproj">
+      <Project>{8897d1e2-0930-41bf-b5a8-6cc698aa2f6c}</Project>
+      <Name>Aplicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{d69d8cdf-0f06-4d16-b1b1-e12bc894412a}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconos\1484130351_document-new.png" />
+    <Content Include="Iconos\1484130459_document-new.png" />
+    <Content Include="Iconos\1484130522_3floppy_unmount.png" />
+    <Content Include="Iconos\1484130690_Pencil3.png" />
+    <Content Include="Iconos\1484130735_document-03.png" />
+    <Content Include="Iconos\1484130876_gnome-session-logout.png" />
+    <Content Include="Iconos\1484131142_delete-file.png" />
+    <Content Include="Iconos\1484132302_document-print.png" />
+    <Content Include="Iconos\1484133120_document-delete.png" />
+    <Content Include="Iconos\1484135152_search_b.png" />
+    <Content Include="Iconos\1484136062_Locked_Cell_Door.png" />
+    <Content Include="Iconos\1484136266_Log Out.png" />
+    <Content Include="Iconos\1484369982_edit-clear.png" />
+    <Content Include="Iconos\1484370378_constr_account_statements.png" />
+    <Content Include="Iconos\1484370528_blank-check-cheque.png" />
+    <Content Include="Iconos\1484370557_blank-check-cheque.png" />
+    <Content Include="Iconos\1484370611_invoice.png" />
+    <Content Include="Iconos\1484370701_Sales-by-Payment-Method-rep.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
